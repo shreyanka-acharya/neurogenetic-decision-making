@@ -71,7 +71,7 @@ def evolve(pop_size=10, generations=30):
 
 def run_best_agent():
     if 'best_agent' in globals():
-        with open("\n best_agent_weights.pkl", "wb") as f:
+        with open("best_agent_weights.pkl", "wb") as f:
             pickle.dump(best_agent.get_weights(), f)
         print("\n \nSaved best agent weights to 'best_agent_weights.pkl'\n ")
     else:
